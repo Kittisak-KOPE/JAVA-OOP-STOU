@@ -1,0 +1,27 @@
+CREATE TABLE 'customer' (
+	'CUST_NUM' int(4) NOT NULL,
+    'CUST_NAME' varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    'CUST_ADDR' varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+    'CUST_PHONE' varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+    'CUST_MAIL' varchar(100) COLLATE utf8_unicode_ci NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table 'customer'
+--
+
+INSERT INTO 'customer' ('CUST_NUM', 'CUST_NAME', 'CUST_ADDR', 'CUST_PHONE', 'CUST_MAIL') VALUES
+(1002, 'สมชาย สุขดี', 'กรุงเทพ', '0-2530-2121', 'somchai@gmail.com'),
+(1028, 'สิทธิชับ สมานกุล', 'นนทบุรี', '0-6698-1250', 'sittichai@hotmail.com'),
+(1247, 'กุมภา พิทักษ์สุข', 'กรุงเทพ', '0-9274-5812', 'kumpa@hotmail.com'),
+(1321, 'งามเนตร ถนอมศรี', 'นนทบุรี', '0-6689-3472', 'ngamnat@gmail.com'),
+(2081, 'สวัสดิ์ สุขมาก', 'ปทุมธานี', '0-2576-2348', 'sawat@stou.com'),
+(2102, 'สกุลรัตน์ สมควรสุข', 'กรุงเทพ', '0-2281-1576', 'sakunrat@gmail.com'),
+(2306, 'ลัดดาวรรณ เก่งเรียน', 'นนทบุรี', '0-1496-3294', 'ladda@yahoo.com'),
+(3006, 'ลัดดา งามนัก', 'ปทุมธานี', '0-5503-4932', 'ladda@@gmail.com'),
+(3013, 'สกุณร เรียนเก่ง', 'นนทบุรี', '0-1723-1250', 'sakuna@hotmail.com'),
+(3287, 'กรุณา นามไทร', 'นนทบุรี', '0-7555-0332', 'karuna@yahoo.com');
+
+ALTER TABLE 'customer'
+	ADD PRIMARY KEY ('CUST_NUM');
+COMMIT;
